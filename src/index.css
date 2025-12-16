@@ -84,6 +84,9 @@ body {
   background-color: rgb(42, 41, 41); 
   cursor: pointer;
 }
+.pages-button:hover{
+  background-color: #b5aeae; 
+}
 
 .pages-button.active {
   background-color: #fff;
