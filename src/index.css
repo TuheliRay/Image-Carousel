@@ -1,13 +1,16 @@
 body {
   font-family: sans-serif;
 }
-.main{
+.main {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.image-carousel{
+.main h1 {
+  margin-bottom: 0px;
+}
+.image-carousel {
   background-color: #000;
   height: 400px;
   overflow: hidden;
@@ -65,12 +68,14 @@ body {
 }
 .pages {
   position: absolute;
-  bottom: 15px;          /* distance from bottom of image */
+  bottom: 15px; /* distance from bottom of image */
   left: 50%;
   transform: translateX(-50%);
   background-color: #666;
   display: flex;
   gap: 8px;
+  border-radius: 10px;
+  padding: 5px;
 }
 
 .pages-button {
@@ -78,11 +83,12 @@ body {
   height: 10px;
   border-radius: 50%;
   border: none;
-  background: grey;
+
+  background-color: rgb(42, 41, 41); 
   cursor: pointer;
 }
-.image-carousel .pages-button hover{
-  background-color: white;
-}
 
+.pages-button.active {
+  background-color: #fff;
+}
 

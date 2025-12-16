@@ -1,5 +1,7 @@
 import { useState } from 'react';
-export default function ImageCarousel({ images}) {
+export default function ImageCarousel({
+  images
+}) {
   const [index , setIndex] = useState(0);
   const image=images[index];
   function handlePrev(){
