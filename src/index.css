@@ -7,9 +7,6 @@ body {
   justify-content: center;
   align-items: center;
 }
-.main h1 {
-  margin-bottom: 0px;
-}
 .image-carousel {
   background-color: #000;
   height: 400px;
