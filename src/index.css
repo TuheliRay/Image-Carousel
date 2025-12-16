@@ -7,9 +7,6 @@ body {
   justify-content: center;
   align-items: center;
 }
-.main h1{
-  margin-bottom: 0px;
-}
 .image-carousel{
   background-color: #000;
   height: 400px;
@@ -55,7 +52,7 @@ body {
   transform: translateY(-50%);
 }
 
-.image-carousel button:hover {
+.image-carousel .btn:hover {
   background-color: #000b;
 }
 
@@ -66,6 +63,26 @@ body {
 .btn-next {
   right: 16px;
 }
+.pages {
+  position: absolute;
+  bottom: 15px;          /* distance from bottom of image */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #666;
+  display: flex;
+  gap: 8px;
+}
 
+.pages-button {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: none;
+  background: grey;
+  cursor: pointer;
+}
+.image-carousel .pages-button hover{
+  background-color: white;
+}
 
 

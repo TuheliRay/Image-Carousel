@@ -39,9 +39,9 @@ export default function App() {
   const [message, setMessage] = useState('Image Carousel');
 
   return (
-    <div>
-      <h1>{message}</h1>
+    <div className="main">
       <div className="wrapper">
+        <h1>{message}</h1>
       <ImageCarousel images={images}/>
       </div>
     </div>

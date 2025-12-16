@@ -1,5 +1,5 @@
 import { useState } from 'react';
-export default function ImageCarousel({images}) {
+export default function ImageCarousel({ images}) {
   const [index , setIndex] = useState(0);
   const image=images[index];
   function handlePrev(){
@@ -23,7 +23,16 @@ export default function ImageCarousel({images}) {
         onClick = {handlePrev}
         >
         &#10094;</button>
-        // <button className="btn-pages"></button>
+        <div className = "pages">
+        {images.map((_ , pageIndex)=>(
+          <button 
+          className={`pages-button ${
+            pageIndex === index ? "active":''
+          }`}
+          onClick = {() =>{setIndex(pageIndex)}}>
+          </button>
+        ))}
+        </div>
        <button 
        className="btn btn-next"
        onClick = {handleNext}
