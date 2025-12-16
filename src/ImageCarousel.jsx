@@ -14,12 +14,19 @@ export default function ImageCarousel({
   }
   return (
     <div className="image-carousel">
-      <img
-      key = {image.idx}
-      src = {image.src}
-      alt = {image.alt}
-       width = "100%"
-       />
+      <div
+    className="carousel-track"
+    style={{ transform: `translateX(-${index * 100}%)` }}
+  >
+      {images.map((img)=>(
+        <img
+        alt={img.alt}
+        src={img.src}
+        key={img.src}
+        className="image"
+      />
+  ))}
+  </div>
        <button
         className=" btn btn-prev"
         onClick = {handlePrev}
